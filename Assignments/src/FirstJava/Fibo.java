@@ -10,14 +10,17 @@ public class Fibo {
         int n = sc.nextInt();
         int prev = 0;
         int nxt = 1;
-        int res = 0;
+        int res = 0, count = 2;
         System.out.println("Fibonacci Series : ");
-        while (res <= n) {            
-            System.out.print(res+ "\t");
+        System.out.print(prev + "\t" + nxt);
+        while (count <= n) {            
+            res = prev + nxt;
+            System.out.print("\t" + res);
             prev = nxt;
             nxt = res;
-            res = prev + nxt;
+            count++;
         }
+        System.out.println();
     }
     
 }
