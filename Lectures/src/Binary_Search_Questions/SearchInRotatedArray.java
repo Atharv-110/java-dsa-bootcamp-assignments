@@ -17,6 +17,9 @@ public class SearchInRotatedArray {
         if(pivot == -1){
             return binarySearch(nums, target, 0, nums.length-1);
         }
+        else if (nums[pivot] == target) {
+            return pivot;
+        }
         else if(target > nums[0]){
             return binarySearch(nums, target, 0, pivot - 1);
         }
