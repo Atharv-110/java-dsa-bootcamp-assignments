@@ -4,13 +4,13 @@ package Strings_and_StringBuilder;
 
 public class StringPalindromeUsingStringClass {
     public static void main(String[] args) {
-        String str = "abc";
+        String str = "abccba";
         System.out.println(checkPalindrome(str));
     }
 
     private static boolean checkPalindrome(String str) {
         str = str.toLowerCase();
-        for(int i = 0; i < str.length(); i++) {
+        for(int i = 0; i < str.length()/2; i++) {
             int start = str.charAt(i);
             int end = str.charAt(str.length()-i-1);
             if(start != end) {
