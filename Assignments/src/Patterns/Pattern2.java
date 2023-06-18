@@ -1,4 +1,4 @@
-// Assignments: Pattern 1
+// Assignments: Pattern 2
 
 package Patterns;
 
