@@ -2,14 +2,14 @@
 
 package Patterns;
 
-public class Pattern1 {
+public class Pattern2 {
     public static void main(String[] args) {
-        pattern1(5);
+        pattern2(5);
     }
 
-    private static void pattern1(int n) {
-        for (int row = 0; row < n; row++) {
-            for (int col = 0; col < n; col++) {
+    private static void pattern2(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
