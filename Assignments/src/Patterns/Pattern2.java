@@ -8,8 +8,8 @@ public class Pattern2 {
     }
 
     private static void pattern2(int n) {
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < i; j++) {
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= row; col++) {
                 System.out.print("* ");
             }
             System.out.println();
