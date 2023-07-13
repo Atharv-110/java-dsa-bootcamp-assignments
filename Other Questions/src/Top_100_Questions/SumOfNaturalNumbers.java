@@ -17,8 +17,8 @@ public class SumOfNaturalNumbers {
     }
     
     private static int sumRecursive(int n) {
-        if (n <= 1) {
-            return 1;
+        if (n == 0) {
+            return 0;
         }
         return n + sumRecursive(n-1);
     }
