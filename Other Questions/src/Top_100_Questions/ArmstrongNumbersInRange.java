@@ -7,6 +7,7 @@ public class ArmstrongNumbersInRange {
         findAllArmstrong(1, 1000);
     }
     
+//  This function checks & prints the armstrong
     private static void findAllArmstrong(int start, int end) {
         int len = 0;
         for (int i = start; i <= end; i++) {
@@ -18,6 +19,7 @@ public class ArmstrongNumbersInRange {
         System.out.println();
     }
 
+//  this function finds the sum of all the digits powered with length and return it
     private static int helper(int num, int len) {
         if (num <= 1) {
             return num;
